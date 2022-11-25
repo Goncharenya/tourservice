@@ -1,0 +1,29 @@
+{
+  "name": "tourservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goncharenya/tourservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goncharenya/tourservice/issues"
+  },
+  "homepage": "https://github.com/Goncharenya/tourservice#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "gulp-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

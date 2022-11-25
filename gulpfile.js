@@ -171,7 +171,7 @@ exports.build = gulp.series(
     styles,
     buildHtml,
     buildJs,
-    createSprite,
-    createWebp
+    //createSprite,
+    //createWebp
   )
 );
