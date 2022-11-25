@@ -23,7 +23,6 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer(),
       csso()
     ]))
     .pipe(rename("style.min.css"))
@@ -166,7 +165,7 @@ exports.default = gulp.series(
 exports.build = gulp.series(
   clean,
   copyOther,
-  optimizeImages,
+  //optimizeImages,
   gulp.parallel(
     styles,
     buildHtml,
