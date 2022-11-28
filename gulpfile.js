@@ -74,8 +74,8 @@ const buildJs = () => {
   return gulp.src('source/js/*.js')
     .pipe(jsmin())
     .pipe(rename('scripts.min.js'))
-    .pipe(gulp.dest('build/js'));
-  // .pipe(sync.stream());
+    .pipe(gulp.dest('build/js'))
+    .pipe(sync.stream())
 }
 
 exports.buildJs = buildJs;
@@ -135,8 +135,8 @@ const build = gulp.series(
     styles,
     buildHtml,
     buildJs,
-    createSprite,
-    createWebp
+    // createSprite,
+    // createWebp
   ),
 );
 
@@ -165,7 +165,7 @@ exports.default = gulp.series(
 exports.build = gulp.series(
   clean,
   copyOther,
-  //optimizeImages,
+  optimizeImages,
   gulp.parallel(
     styles,
     buildHtml,
