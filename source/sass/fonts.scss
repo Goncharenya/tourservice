@@ -2,6 +2,13 @@
 
 @font-face {
   font-family: 'Raleway';
+  src: url('/fonts/raleway/RalewayExtraBold.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
   src: url('/fonts/raleway/RalewayThin.woff2') format('woff2') url('fonts/raleway/RalewayThin.woff') format('woff');
   font-weight: 1;
   font-style: normal;

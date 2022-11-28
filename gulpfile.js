@@ -14,7 +14,6 @@ const imagemin = require("gulp-imagemin");
 const webp = require('gulp-webp');
 const svgStore = require('gulp-svgstore');
 
-
 // Styles
 
 const styles = () => {

@@ -1,0 +1,13 @@
+.header {
+  background: url("../img/header.jpg")no-repeat;
+  background-size:100%;
+  min-height: 466px;
+
+}
+
+.header__block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 466px;
+}

@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/Goncharenya/tourservice#readme",
   "dependencies": {
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
