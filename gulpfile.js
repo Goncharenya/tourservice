@@ -115,7 +115,7 @@ const createSprite = () => {
 
 const copyOther = (done) => {
   gulp.src([
-    "source/fonts/*.{woff,woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/*.ico",
     "source/img/*.svg",
     "!source/img/icons/*.svg"
