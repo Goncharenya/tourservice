@@ -1,0 +1,140 @@
+@import "var";
+
+.recommend-tour {
+  background: url("../img/see_bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 7rem 10px;
+}
+
+.recommend-tour-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommend-tour-box__item {
+
+  &:first-child {
+    width: 20%;
+  }
+}
+
+
+//------------slider------
+
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  min-height: 360px;
+}
+
+//-------preview-control-------
+
+.slider-control {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slider-control__item {
+  width: 55px;
+  height: 55px;
+  border: 1px solid #ffffff;
+}
+
+.preview {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 17px;
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    transform: rotate(-135deg);
+    left: 20px;
+  }
+
+}
+
+.next {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    transform: rotate(45deg);
+    top: 17px;
+    left: 10px;
+  }
+}
+
+
+//-------preview-control-------
+
+.recommend-tour__title {
+  font-weight: 100;
+  font-size: 2rem;
+  width: 49%;
+  margin-top: 0;
+}
+
+.recommend-tour__item {
+  margin: 0 1rem;
+  width: 360px;
+  flex: 1;
+  box-sizing: border-box;
+
+  &:nth-child(1) {
+    .slider__item {
+      background: url("../img/oahy.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.recommend-tour__item:nth-child(2) {
+  .slider__item {
+    background: url("../img/pearl-harbor.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.recommend-tour__item:nth-child(3) {
+  .slider__item {
+    background: url("../img/black-pearl.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+
+.price__box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
+
+.price__value {
+  font-size: 2rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.price__description {
+  color: $background_icon;
+}
+

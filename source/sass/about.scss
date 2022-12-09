@@ -1,0 +1,89 @@
+@import "var";
+
+.about {
+  background: $background_section;
+  color: $font_color;
+  height: 100vh;
+}
+
+.about-block__subtitle {
+  font-weight: 100;
+  letter-spacing: 2.5px;
+}
+
+.about-block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 7rem 10px 8rem 10px;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 7rem;
+    z-index: 10;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background: $background_section;
+  }
+}
+
+.about-block__item {
+  width: 50%;
+}
+
+.about-tours__title {
+  font-size: 20px;
+}
+
+.about-tours__item {
+  &:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.about-tours__icon {
+  margin-top: 1.5rem;
+
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 2rem;
+  }
+}
+
+.about-tours {
+  text-align: justify;
+}
+
+.tours-more {
+  position: relative;
+  background: none;
+  outline: none;
+  color: $font_color;
+  border: 1px solid #6f6c6c;
+  padding: 10px 30px 10px 20px;
+  text-transform: uppercase;
+}
+
+.btn-arrow-box {
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  right: 10px;
+  bottom: 15px;
+
+}
+
+
+
+
+
