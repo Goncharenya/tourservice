@@ -1,0 +1,19 @@
+.individual-tours {
+  background: url("../img/see_bg.jpg")no-repeat center/cover;
+  //min-height: 80vh;
+}
+
+.individual-tours__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows:  1fr;
+  grid-gap: 1rem;
+
+}
+.individual-tours__container {
+  margin: 3rem auto;
+}
+
+.individual-tours__title {
+  margin-bottom: 2rem;
+}

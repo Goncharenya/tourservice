@@ -12,13 +12,25 @@
     left: 0;
     top: 0;
   }
+
+  .subtitle {
+    display: block;
+    margin-bottom: 3rem;
+  }
+  .title_h2 {
+    margin: 3rem auto 1rem auto;
+  }
 }
 
-.form {
+.start-travel__box {
   display: flex;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+}
+.start-travel__item {
+  width: 25%;
 }
 
-.form__item {
-  display: flex;
-  flex-direction: column;
+.start-travel__info {
+  width: 80%;
 }

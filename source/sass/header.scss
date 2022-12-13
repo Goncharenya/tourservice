@@ -12,7 +12,7 @@
     z-index: -1;
     position: absolute;
   }
-  min-height: 100vh;
+  min-height: 100%
 
 }
 
@@ -45,7 +45,7 @@
   font-weight: 900;
   font-size: 4.0rem;
   text-transform: uppercase;
-  margin-top: 6rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   color: $font_color;
@@ -67,7 +67,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- // min-height: 466px;
+  padding: 5rem 0;
 }
 
 .header__footer {

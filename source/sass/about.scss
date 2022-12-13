@@ -2,8 +2,10 @@
 
 .about {
   background: $background_section;
-  color: $font_color;
-  height: 100vh;
+}
+
+.about-block__title {
+  margin-top: 1rem;
 }
 
 .about-block__subtitle {
@@ -16,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 7rem 10px 8rem 10px;
+  padding: 7rem 10px;
 
   &::after {
     content: "";
@@ -32,10 +34,6 @@
 
 .about-block__item {
   width: 50%;
-}
-
-.about-tours__title {
-  font-size: 20px;
 }
 
 .about-tours__item {
