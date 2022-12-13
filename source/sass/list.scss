@@ -1,0 +1,44 @@
+.list {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  width: 40%;
+  right: 2px;
+  top: 0;
+  font-weight: 400;
+  background: #ffffff;
+}
+
+._active {
+  display: flex;
+  flex-direction: column;
+}
+
+.list__item {
+  display: block;
+  padding: .3rem 1rem;
+  position: relative;
+  line-height: 1.4;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background: rgba(0, 0, 0, 0.3);
+    right: 20px;
+    bottom: 0;
+    transition: .3s;
+    z-index: 100;
+  }
+
+  &:hover::after {
+    width: 95%;
+    left: 0;
+    right: 20px;
+  }
+}
+

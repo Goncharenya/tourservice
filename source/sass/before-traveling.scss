@@ -1,3 +1,115 @@
 .before-traveling {
   color: #000000;
 }
+
+.before-traveling__box {
+  margin: 3rem 0;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: minmax(5%, 10%) 2fr minmax(15%, 35%);
+}
+
+.before-traveling__container {
+  margin: 3rem auto;
+  // margin-bottom: 10rem;
+}
+
+.before-traveling__item {
+  position: relative;
+  padding: 0 1rem;
+
+  .traveling-info__control {
+    margin-top: 7rem;
+    margin-right: -3rem;
+  }
+
+  .preview,
+  .next {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .preview::after {
+    border-right: 1px solid rgba(0, 0, 0, 1);
+    border-top: 1px solid rgba(0, 0, 0, 1);
+  }
+
+  .next::before {
+    border-right: 1px solid rgba(0, 0, 0, 1);
+    border-top: 1px solid rgba(0, 0, 0, 1);
+  }
+}
+
+.before-traveling__item:nth-child(1) {
+  //width: 10%;
+  text-align: end;
+}
+
+.before-traveling__item:nth-child(2) {
+  //width: 55%;
+  padding: 3rem 3rem 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.before-traveling__item:nth-child(3) {
+  //width: 30%;
+  display: flex;
+  justify-content: end;
+}
+
+.before-traveling__menu-burger {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.traveling-info__title {
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.traveling-info__description {
+  padding-top: 2rem;
+}
+
+.traveling-info__number {
+  .number__count {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .number__next {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 23px;
+      top: 2px;
+      width: 1px;
+      height: 17px;
+      background: rgba(0, 0, 0, .5);
+      transform: rotate(12deg);
+    }
+  }
+}
+
+.traveling-info__guide {
+  background: url("../img/oahy.jpg") no-repeat center/cover;
+  object-fit: cover;
+  width: 360px;
+  height: 360px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.guide__title {
+  font-weight: 400;
+  font-size: 2rem;
+}
