@@ -4,9 +4,12 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  // height: 688px;
-  //grid-row-start: 2;
   color: $font_color;
+
+  @media screen and (max-width: 730px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 .tours-box__group-title {
@@ -24,6 +27,10 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media screen and (max-width: 730px) {
+      grid-row: 1;
+    }
+
     h3 {
       margin-bottom: 5rem;
     }
@@ -34,6 +41,9 @@
     background: url("../img/img_02.jpg") no-repeat;
     background-size: cover;
     padding-left: 4rem;
+    @media screen and (max-width: 730px) {
+      grid-row: 2;
+    }
 
     h3 {
       margin-bottom: 0;
@@ -45,6 +55,11 @@
     background-size: cover;
     grid-column-start: 2;
     padding-left: 4rem;
+
+    @media screen and (max-width: 730px) {
+      grid-row: 3;
+      grid-column: 1;
+    }
   }
 }
 

@@ -15,28 +15,25 @@
 
 .product:nth-child(1) {
   .product__item {
-    background: url("../img/hiking_hawaii.jpg")no-repeat;
-    object-fit: cover;
+    background: url("../img/hiking_hawaii.jpg")no-repeat center/cover;
   }
 }
 
 .product:nth-child(2) {
   .product__item {
-    background: url("../img/pinapple.jpg")no-repeat;
-    object-fit: cover;
+    background: url("../img/pinapple.jpg")no-repeat center/cover;
   }
 }
 
 .product:nth-child(3) {
   .product__item {
-    background: url("../img/flight.jpg")no-repeat;
-    object-fit: cover;
+    background: url("../img/flight.jpg")no-repeat center/cover;
   }
 }
 
 .product:nth-child(4) {
   .product__item {
-    background: url("../img/national_parks.jpg")no-repeat;
+    background: url("../img/national_parks.jpg")no-repeat center/cover;
   }
 }
 

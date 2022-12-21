@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Hawaii tours</title>
     <!--    <link rel="stylesheet" href="sass/normalize.css">-->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -13,6 +13,10 @@
 <header class="header">
     <div class="header__logo">тут LOGO будет</div>
     <div class="header__menu menu wrapp">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="burger menu__btn" for="menu__toggle">
+            <span class="burger__line"></span>
+        </label>
         <ul class="menu__list">
             <li class="menu__item"><a href="" class="menu__link">About us</a></li>
             <li class="menu__item"><a href="" class="menu__link">Tours</a></li>
@@ -27,8 +31,8 @@
         <div class="header__item">
             <h1 class="header__caption">
                 Make <br> your vacation <br>in Hawaii
-                <svg class="header__caption-under" xmlns="http://www.w3.org/2000/svg" viewBox="0 14 400 70">
-                    <text y="50"
+                <svg class="header__caption-under" xmlns="http://www.w3.org/2000/svg" viewBox="0 15 500 70">
+                    <text y="60"
                           font-family="Raleway, sans-serif">
                         Like a dream
                     </text>
@@ -190,8 +194,8 @@
 
 <section class="recommend-tour section">
     <div class="wrapp">
-        <h2 class="title_h2">
-            Recommend <br> tour
+        <h2 class="title_h2 recommend-tour__title_h2">
+            Recommend tour
         </h2>
         <div class="recommend-tour-box">
             <div class="recommend-tour-box__item">
@@ -214,12 +218,12 @@
                                 Classic OAHU
                             </h4>
                             <div class="btn__box">
-                                <div class="btn btn--details">
+                                <a class="btn btn--details">
                                     details
-                                </div>
-                                <div class="btn">
+                                </a>
+                                <button class="btn">
                                     book now
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="recommend-tour__price price">
@@ -236,12 +240,12 @@
                                 Pearl Harbor
                             </h4>
                             <div class="btn__box">
-                                <div class="btn btn--details">
+                                <a href="pearl-harbor_tour.html" class="btn btn--details">
                                     details
-                                </div>
-                                <div class="btn">
+                                </a>
+                                <button class="btn">
                                     book now
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="recommend-tour__price price">
@@ -257,12 +261,12 @@
                                 Pearl and Black coral
                             </h4>
                             <div class="btn__box">
-                                <div class="btn btn--details">
+                                <a href="pearl-harbor_tour.html" class="btn btn--details">
                                     details
-                                </div>
-                                <div class="btn">
+                                </a>
+                                <button class="btn">
                                     book now
-                                </div>
+                                </button>
                             </div>
 
                         </div>
@@ -521,7 +525,7 @@
             <div class="before-traveling__item">
                 <div class="traveling-info__guide guide">
                     <div class="guide__title">
-                        Oahy <br> guide
+                        Oahy  guide
                     </div>
                     <a class="btn" download="#">download</a>
                 </div>
@@ -545,9 +549,9 @@
                         <div class="btn btn--details">
                             details
                         </div>
-                        <div class="btn">
+                        <button class="btn">
                             book now
-                        </div>
+                        </button>
                     </div>
                 </div>
                 <div class="product__price price">
@@ -567,9 +571,9 @@
                         <div class="btn btn--details">
                             details
                         </div>
-                        <div class="btn">
+                        <button class="btn">
                             book now
-                        </div>
+                        </button>
                     </div>
                 </div>
                 <div class="product__price price">
@@ -589,9 +593,9 @@
                         <div class="btn btn--details">
                             details
                         </div>
-                        <div class="btn">
+                        <button class="btn">
                             book now
-                        </div>
+                        </button>
                     </div>
                 </div>
                 <div class="product__price price">
@@ -639,13 +643,13 @@
 
             <input type="email" class="form__email" id="email" placeholder="E-mail">
             <label for="email"></label>
+            <div class="form__data-box">
+                <input type="text" class="form__data-arrival" id="data-arrival" placeholder="Date">
+                <label for="data-arrival"></label>
 
-            <input type="text" class="form__data-arrival" id="data-arrival" placeholder="Date">
-            <label for="data-arrival"></label>
-
-            <input type="text" class="form__data-departure" id="data-departure" placeholder="Date">
-            <label for="data-departure"></label>
-
+                <input type="text" class="form__data-departure" id="data-departure" placeholder="Date">
+                <label for="data-departure"></label>
+            </div>
 
             <textarea name="message" id="message" class="form__textarea" placeholder="Your message"></textarea>
 
@@ -666,7 +670,9 @@
                 </div>
 
                 <div class="tours__btn">
-
+                    <svg class="dinner-svg" height="35" width="35" viewBox="-12 -10 40 40">
+                        <use xlink:href="img/sprite.svg#chat"></use>
+                    </svg>
                 </div>
             </div>
             <p class="start-travel__info">
@@ -678,7 +684,7 @@
     <div class="footer__social wrapp">
         <div class="footer__copyright">
             <p class="footer__copyright-item">
-                &#169;copyright 2022
+                &#169; copyright 2022
             </p>
         </div>
         <div class="footer__social-network">

@@ -1,0 +1,51 @@
+@import "var";
+.body-pearl-harbor {
+  background: $background_section;
+}
+
+.header-tour {
+  padding-top: 3rem;
+}
+
+.header-tour__slider {
+  .slider__item {
+    width: 100vw;
+
+    img{
+      display: none;
+      width: 100%;
+      height: auto;
+      background: center/cover;
+    }
+
+    ._active {
+      display: block;
+    }
+  }
+
+}
+
+.back {
+  position: relative;
+  text-decoration: none;
+  color: $font_color;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-left: 1.8rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    transform: rotate(45deg);
+    left: -22px;
+    top: 4px;
+  }
+}
+
+.dinner-svg {
+  fill: white;
+}

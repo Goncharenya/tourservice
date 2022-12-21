@@ -1,19 +1,34 @@
 .individual-tours {
-  background: url("../img/see_bg.jpg")no-repeat center/cover;
+  background: url("../img/see_bg.jpg") no-repeat center/cover;
   //min-height: 80vh;
 }
 
 .individual-tours__box {
   display: grid;
-  grid-template-columns: repeat(4,minmax(10%,360px));
+  grid-template-columns: repeat(4, minmax(10%, 360px));
   grid-template-rows: minmax(10%, 360px);
   grid-gap: 1rem;
 
+  @media screen and (max-width: 1540px) {
+    grid-template-columns: repeat(2, minmax(10%, 360px));
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 880px) {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+  }
 }
+
 .individual-tours__container {
   margin: 3rem auto;
 }
 
 .individual-tours__title {
   margin-bottom: 2rem;
+  @media screen and (max-width: 1540px) {
+    text-align: center;
+  }
 }

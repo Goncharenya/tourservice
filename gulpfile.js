@@ -134,8 +134,8 @@ const build = gulp.series(
     styles,
     buildHtml,
     buildJs,
-    // createSprite,
-    // createWebp
+    createSprite,
+    createWebp
   ),
 );
 
@@ -169,7 +169,7 @@ exports.build = gulp.series(
     styles,
     buildHtml,
     buildJs,
-    //createSprite,
-    //createWebp
+    createSprite,
+    createWebp
   )
 );

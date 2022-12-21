@@ -6,67 +6,103 @@
   padding: 7rem 10px;
 }
 
+.recommend-tour__title_h2 {
+  width: 30%;
+
+  @media screen and (max-width: 1580px) {
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}
+
 .recommend-tour-box {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1580px) {
+    flex-direction: column;
+  }
 }
 
 .recommend-tour-box__item {
 
   &:first-child {
     width: 20%;
+
+    @media screen and (max-width: 1580px) {
+      width: 100%;
+      display: flex;
+      margin-bottom: 2rem;
+
+      p {
+        &:nth-child(2) {
+          padding: 0 2rem;
+        }
+      }
+    }
   }
 }
 
 .recommend-tour__title {
+  position: relative;
   font-weight: 100;
   font-size: 2rem;
   width: 49%;
   margin-top: 0;
+
+  @media screen and (max-width: 1280px) {
+    width: 80%;
+  }
 }
 
 .recommend-tour__item {
   margin: 0 1rem;
-  width: 33%;
+  width: 360px;
+  height: auto;
   flex: 1;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 
+
   .slider__item {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: space-between;
+    //box-sizing: border-box;
     padding: 1.5rem;
+    //width: 100%;
+    height: 360px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .3);
+    }
   }
 }
 
 .recommend-tour__item:nth-child(1) {
   .slider__item {
-    width: 100%;
-    height: 100%;
-    background: url("../img/oahy.jpg") no-repeat;
-    background-size: cover;
+    background: url("../img/oahy.jpg") no-repeat top/cover;
   }
 }
 
 .recommend-tour__item:nth-child(2) {
   .slider__item {
-    width: 100%;
-    height: 100%;
-    background: url("../img/pearl-harbor.jpg") no-repeat;
-    background-size: cover;
+    background: url("../img/pearl-harbor.jpg") no-repeat top/cover;
   }
 }
 
 .recommend-tour__item:nth-child(3) {
   .slider__item {
-    width: 100%;
-    height: 100%;
-    background: url("../img/black-pearl.jpg") no-repeat;
-    background-size: cover;
+    background: url("../img/black-pearl.jpg") no-repeat top/cover;
   }
 }
 
@@ -75,14 +111,24 @@
   bottom: 0;
   left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   padding-bottom: 2rem;
+
+  @media screen and (max-width: 1080px) {
+    flex-direction: column;
+    bottom: -40px;
+    .btn--details {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 .btn--details {
   background: transparent;
   border: 1px solid #fff;
+  text-decoration: none;
+
   &:hover {
     border: 1px solid $background_btn;
   }
@@ -109,8 +155,15 @@
 
 
 .slider {
-  width: 70%;
+  width: 80%;
+  flex-grow: 1;
+  margin-left: 2rem;
 
+  @media screen and (max-width: 1580px) {
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
 }
 
 .slider__container {
@@ -124,6 +177,7 @@
 .slider-control {
   display: flex;
   justify-content: flex-end;
+  margin-top: 2rem;
 }
 
 .slider-control__item {

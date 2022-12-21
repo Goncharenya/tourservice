@@ -26,9 +26,21 @@
   display: flex;
   margin-bottom: 3rem;
   justify-content: space-between;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 }
+
 .start-travel__item {
   width: 25%;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
 
 .start-travel__info {

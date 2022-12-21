@@ -1,5 +1,6 @@
 .before-traveling {
   color: #000000;
+  background: #ffffff;
 }
 
 .before-traveling__box {
@@ -7,6 +8,11 @@
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: minmax(5%, 10%) 2fr minmax(15%, 35%);
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: minmax(5%, 10%) 2fr;
+
+  }
 }
 
 .before-traveling__container {
@@ -21,6 +27,10 @@
   .traveling-info__control {
     margin-top: 7rem;
     margin-right: -3rem;
+
+    @media screen and (max-width: 1024px) {
+      margin-top: 2rem;
+    }
   }
 
   .preview,
@@ -55,6 +65,12 @@
   //width: 30%;
   display: flex;
   justify-content: end;
+
+  @media screen and (max-width: 1024px) {
+    grid-column: 1/3;
+    padding: 0;
+    justify-content: center;
+  }
 }
 
 .before-traveling__menu-burger {
@@ -107,9 +123,25 @@
   justify-content: space-between;
   color: #ffffff;
   padding: 1rem;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    //height: auto;
+    text-align: center;
+    .btn {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .guide__title {
   font-weight: 400;
   font-size: 2rem;
+  width: 50%;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    text-align: center;
+  }
 }

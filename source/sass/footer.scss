@@ -15,14 +15,19 @@
 .support {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1024px) {
+    margin-right: 4rem;
+    width: 38%;
+  }
 }
 
-.footer__support{
+.footer__support {
 
 }
 
 .tours__btn {
- // margin-left: 15%;
+  // margin-left: 15%;
 }
 
 .footer__social {

@@ -1,4 +1,7 @@
 .wrapp {
   width: 80%;
   margin: 0 auto;
+  @media screen and (max-width: 1640px) {
+    width: 90%;
+  }
 }
