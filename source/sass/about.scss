@@ -35,6 +35,10 @@
     .about-block__item:last-child {
       width: 70%;
       padding-left: 2rem;
+
+      @media screen and (max-width: 480px) {
+        padding: 0;
+      }
     }
   }
 

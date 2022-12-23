@@ -8,15 +8,28 @@
   font-size: 1.5rem;
   width: 50%;
   margin-top: 4rem;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
 
 .special-services__block-head {
   width: 50%;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 }
 
 .special-services__block {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 
   &:first-child {
     margin-bottom: 1rem;
@@ -39,6 +52,10 @@
 
 .special-services__subtitle {
   margin-bottom: 4rem;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 1rem;
+  }
 }
 
 .service__icon {

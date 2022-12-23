@@ -13,4 +13,8 @@
   min-height: 100%;
   width: 100%;
   background: $background_section;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 }

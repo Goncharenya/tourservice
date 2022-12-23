@@ -20,9 +20,11 @@
     margin-right: 4rem;
     width: 38%;
   }
-}
 
-.footer__support {
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
 
 }
 

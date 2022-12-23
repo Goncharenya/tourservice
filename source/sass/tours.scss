@@ -41,8 +41,13 @@
     background: url("../img/img_02.jpg") no-repeat;
     background-size: cover;
     padding-left: 4rem;
+
     @media screen and (max-width: 730px) {
       grid-row: 2;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 1.5rem;
     }
 
     h3 {
@@ -60,6 +65,10 @@
       grid-row: 3;
       grid-column: 1;
     }
+
+    @media screen and (max-width: 480px) {
+      padding: 1.5rem;
+    }
   }
 }
 
@@ -75,6 +84,9 @@
 }
 
 .tours__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: none;
   border: 1px solid rgba(255, 255, 255, .6);
   position: relative;

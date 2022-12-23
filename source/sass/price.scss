@@ -1,0 +1,25 @@
+@import "var";
+.price__box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+
+  //@media screen and (max-width: 900px) {
+  //  margin: 0 0 1.5rem 0;
+  //}
+}
+
+.price__value {
+  font-size: 2rem;
+ // margin: 2rem 1rem;
+  //@media screen and (max-width: 880px) {
+  //  margin-top: 0;
+  //}
+}
+
+.price__description {
+  color: $background_icon;
+  margin-top: 0.5rem;
+}

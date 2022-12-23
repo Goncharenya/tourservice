@@ -12,38 +12,80 @@
 <header class="header-tour">
     <div class="header-tour__control wrapper">
         <a href="index.html" class="back"> back</a>
-        <div class="close"></div>
-    </div>
-    <div class="header-tour__title-box wrapper">
-        <h1 class="title_h2 header-tour__title">Pearl-Harbor</h1>
-        <div class="header-tour__description">
-            Guided tour
-        </div>
-        <div class="header-tour__description">
-            <svg class="dinner-svg" height="48" width="48" viewBox="0 0 48 48">
-                <use xlink:href="img/sprite.svg#dinner"></use>
-            </svg>
-            Dinner tour
+        <div class="close">
+            <span class="close__line"></span>
         </div>
     </div>
-    <div class="header-tour__slider slider">
-        <div class="slider__item">
+    <div class="header-tour__title-box wrapp">
+        <h1 class="title_h2 header-tour__title">Pearl Harbor</h1>
+        <div class="header-tour__box">
+            <div class="header-tour__description">
+                <svg class="dinner-svg" height="48" width="48" viewBox="0 0 48 48">
+                    <use xlink:href="img/sprite.svg#dinner"></use>
+                </svg>
+               <p>Guided tour</p>
+            </div>
+            <div class="header-tour__description">
+                <svg class="dinner-svg" height="48" width="48" viewBox="0 0 48 48">
+                    <use xlink:href="img/sprite.svg#map"></use>
+                </svg>
+                <p>Dinner tour</p>
+            </div>
+        </div>
+    </div>
+    <div class="header-tour__slider slider-tour">
+        <div class="slider-tour__item">
             <img src="img/p-h_slide_01.jpg" alt="Pearl-Harbor, tour" class="slider__image _active">
         </div>
-        <div class="slider__item">
+        <div class="slider-tour__item">
             <img src="img/p-h_slide_01.jpg" alt="Pearl-Harbor, tour" class="slider__image">
         </div>
-        <div class="slider__item">
+        <div class="slider-tour__item">
             <img src="img/p-h_slide_01.jpg" alt="Pearl-Harbor, tour" class="slider__image">
         </div>
-        <div class="slider__item">
+        <div class="slider-tour__item">
             <img src="img/p-h_slide_01.jpg" alt="Pearl-Harbor, tour" class="slider__image">
         </div>
-        <div class="slider__item">
+        <div class="slider-tour__item">
             <img src="img/p-h_slide_01.jpg" alt="Pearl-Harbor, tour" class="slider__image">
+        </div>
+        <div class="slider-tour__control">
+            <div class="preview"></div>
+            <div class="next"></div>
         </div>
     </div>
 
 </header>
+
+<main class="main-pearl-harbor wrapp">
+    <div class="main-pearl-harbor__item">
+        <div class="main-pearl-harbor__date">
+            <p>Details</p>
+        </div>
+        <div class="main-pearl-harbor__calendar">
+            <div class="week">
+                <span class="week__item">TU</span>
+                <span class="week__item">TH</span>
+                <span class="week__item">SAT</span>
+                <p class="week__desc">tour runs</p>
+            </div>
+            <div class="time">
+                <div class="time__item">06:45</div>
+                <p class="time__desk">am</p>
+                <div class="time__item">17:00</div>
+                <p class="time__desc">pm</p>
+            </div>
+        </div>
+        <div class="main-pearl-harbor__price">
+            <p>Price</p>
+        </div>
+    </div>
+
+
+    <div class="main-pearl-harbor__item">
+
+    </div>
+
+</main>
 </body>
 </html>
