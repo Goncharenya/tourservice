@@ -17,6 +17,10 @@
   margin: 5px 0 10px 0;
 }
 
+.tours-box__title {
+  width: 40%;
+}
+
 .tours-box__item {
   &:first-child {
     background: url("../img/img_01.jpg") no-repeat;
@@ -81,6 +85,9 @@
 
 .tours-box__groups {
   margin-top: 3rem;
+  @media screen and (max-width: 780px) {
+    margin-top: 0;
+  }
 }
 
 .tours__btn {

@@ -47,7 +47,6 @@
   flex-direction: column;
   color: $font_color;
   position: relative;
-  //line-height: 0.9;
   margin-bottom: 20px;
 
   @media screen and (max-width: 1024px) {
@@ -68,11 +67,30 @@
 
 .header__caption-under {
   fill: transparent;
-  stop-color: black;
   stroke: $font_color;
   stroke-width: 1px;
   font-size: 3rem;
-  width: 80%;
+  margin-top: -2rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 4rem;
+    margin-top: .1rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 5rem;
+    //height: 60px;
+  }
+
+  @media screen and (max-width: 490px) {
+    font-size: 5.5rem;
+    height: 70px;
+  }
+
+  @media screen and (max-width: 390px) {
+    font-size: 6.5rem;
+    height: 70px;
+  }
 }
 
 .header__block {

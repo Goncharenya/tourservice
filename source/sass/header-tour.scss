@@ -2,10 +2,18 @@
 
 .body-pearl-harbor {
   background: $background_section;
+
+  p {
+    line-height: 1.5;
+  }
 }
 
 .header-tour {
   padding-top: 3rem;
+}
+
+.header-tour__title {
+  margin-top: 0;
 }
 
 .header-tour__slider {
@@ -13,19 +21,25 @@
 
   .slider-tour__item {
     width: 100vw;
+    min-height: 100px;
+    display: none;
 
     img {
-      display: none;
       width: 100%;
       height: auto;
       background: center/cover;
     }
+  }
 
-    ._active {
-      display: block;
-    }
+  ._active {
+    display: block;
+  }
+
+  .oahu_img {
+    filter: brightness(30%);
   }
 }
+
 
 .back {
   position: relative;
@@ -84,9 +98,35 @@
   }
 }
 
+.dots {
+  position: absolute;
+  display: flex;
+  bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dots__item {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  margin-right: 2rem;
+  transition: .3s;
+  cursor: pointer;
+  // border: 1px solid #ffffff;
+
+  &:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+}
+
 .header-tour__control {
   display: flex;
   justify-content: space-between;
+
 }
 
 .close {
@@ -115,6 +155,7 @@
     transform: rotate(-45deg);
     z-index: 100;
   }
+
   .close__line {
     position: absolute;
     display: block;
@@ -126,8 +167,202 @@
   }
 }
 
+.pearl-harbor-icon__svg {
+  width: 15px;
+  height: 15px;
+  fill: $background_icon;
+  margin-right: .3rem;
+}
 
 .header-tour__box {
   display: flex;
+  margin: 1rem 2rem 3rem 0;
+}
 
+.header-tour__description {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+
+  p {
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font-weight: 400;
+    font-size: .75rem;
+  }
+}
+
+.time {
+  display: flex;
+
+  .time__box {
+    margin-right: 2rem;
+  }
+}
+
+.main-pearl-harbor__price-value {
+  .price__box {
+    margin-left: 0;
+  }
+}
+
+
+.main-pearl-harbor {
+  display: grid;
+  grid-template-columns: minmax(150px, 300px) 1fr;
+
+  .main-pearl-harbor__item {
+    margin-top: 3rem;
+
+    &:last-child {
+      margin-left: 2rem;
+      width: 80%;
+    }
+  }
+}
+
+.pearl-harbor__item {
+  display: flex;
+}
+
+.pearl-harbor {
+  .price__value {
+    font-size: 1.25rem;
+  }
+
+  .price__description {
+    font-size: 0.75rem;
+  }
+}
+
+.pearl-harbor__day {
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+}
+
+.details,
+.price {
+  width: 100px;
+}
+
+.day__box {
+  display: flex;
+
+  .day__item {
+    padding: 0 1rem;
+
+    &:nth-child(2) {
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.pearl-harbor__title {
+  width: 60%;
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 2rem;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    font-size: 1.75rem;
+  }
+
+  @media screen and (max-width: 1280px) {
+    width: 90%;
+    //font-size: 1.75rem;
+  }
+}
+
+.program__title,
+.pearl-harbor__sub-title {
+  font-weight: 400;
+}
+
+.pearl-harbor__sub-title {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.program__title {
+  margin-bottom: .5rem;
+}
+
+.pearl-harbor__plan {
+  margin-top: 2.5rem;
+  font-weight: 400;
+}
+
+.program__item-title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.pearl-harbor-icon__svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 2rem;
+}
+
+.pearl-harbor-icon__arrow_down {
+  border: 1px solid $background_icon;
+  padding: 2px;
+  border-radius: 4px;
+  width: 15px;
+  height: 15px;
+}
+
+.oahu-icon__arrow_down {
+  border: 1px solid $background_icon;
+  padding: 2px;
+  border-radius: 4px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(-90deg);
+}
+
+.program__description {
+  margin-left: 3.5rem;
+  margin-top: 0;
+}
+
+.pearl-harbor__btn {
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+}
+
+.body-oahu {
+
+  .pearl-harbor__program {
+    margin-top: 2rem;
+  }
+  .program__item {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+
+    .program__item-title {
+      align-items: flex-start;
+    }
+
+    .program__description {
+      margin: 0 0 0 1rem;
+      font-size: 0.65rem;
+    }
+
+    .pearl-harbor-icon__svg {
+      margin-right: 0;
+    }
+  }
 }

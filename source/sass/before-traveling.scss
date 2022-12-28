@@ -1,6 +1,19 @@
 .before-traveling {
   color: #000000;
   background: #ffffff;
+
+  .title_h2 {
+    width: 30%;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .subtitle {
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
+  }
 }
 
 .before-traveling__box {

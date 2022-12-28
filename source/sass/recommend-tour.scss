@@ -8,6 +8,7 @@
 
 .recommend-tour__title_h2 {
   width: 30%;
+  margin-bottom: 2rem;
 
   @media screen and (max-width: 1580px) {
     text-align: center;
@@ -105,7 +106,7 @@
     width: 15px;
     height: 15px;
     position: absolute;
-    top: 17px;
+    top: 18px;
     border-right: 1px solid #ffffff;
     border-top: 1px solid #ffffff;
     transform: rotate(-135deg);
@@ -124,8 +125,8 @@
     border-right: 1px solid #ffffff;
     border-top: 1px solid #ffffff;
     transform: rotate(45deg);
-    top: 17px;
-    left: 10px;
+    top: 18px;
+    left: 16px;
   }
 }
 

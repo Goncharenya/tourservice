@@ -48,6 +48,10 @@
 
 .special-services__title {
   margin-bottom: 0;
+  width: 30%;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 }
 
 .special-services__subtitle {
