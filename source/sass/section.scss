@@ -1,5 +1,7 @@
 @import "var";
 .section {
-  //background-color: $background_section;
+ min-height: 975px;
+  display: flex;
+ // width: 100%;
 
 }

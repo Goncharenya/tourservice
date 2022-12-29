@@ -42,7 +42,7 @@
   font-weight: 900;
   font-size: 5vw;
   text-transform: uppercase;
-  margin-top: 2rem;
+  //margin-top: 2rem;
   display: flex;
   flex-direction: column;
   color: $font_color;
@@ -51,17 +51,17 @@
 
   @media screen and (max-width: 1024px) {
     font-size: 5rem;
-    margin-top: 7rem;
+    //margin-top: 7rem;
   }
 
   @media screen and (max-width: 490px) {
     font-size: 3.5rem;
-    margin-top: 7rem;
+    //margin-top: 7rem;
   }
 
   @media screen and (max-width: 320px) {
     font-size: 2rem;
-    margin-top: 7rem;
+    //margin-top: 7rem;
   }
 }
 

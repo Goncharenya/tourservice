@@ -5,6 +5,7 @@
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   color: $font_color;
+  width: 100%;
 
   @media screen and (max-width: 730px) {
     grid-template-columns: 1fr;
@@ -86,7 +87,7 @@
 .tours-box__groups {
   margin-top: 3rem;
   @media screen and (max-width: 780px) {
-    margin-top: 0;
+    margin-top: 1rem;
   }
 }
 

@@ -13,7 +13,12 @@
 .slider__container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 1580px) {
+    justify-content: center;
+  }
+
   @media screen and (max-width: 900px) {
     flex-wrap: wrap;
     justify-content: center;
@@ -39,6 +44,9 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 2rem;
+  @media screen and (max-width: 901px) {
+    margin-bottom: 2rem;
+  }
 }
 
 .slider-control__item {
