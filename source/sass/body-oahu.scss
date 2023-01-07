@@ -1,0 +1,25 @@
+.body-oahu {
+
+  .pearl-harbor__program {
+    margin-top: 2rem;
+  }
+  .program__item {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+
+    .program__item-title {
+      align-items: flex-start;
+    }
+
+    .program__description {
+      margin: 0 0 0 1rem;
+      font-size: 0.65rem;
+    }
+
+    .pearl-harbor-icon__svg {
+      margin-right: 0;
+    }
+  }
+}

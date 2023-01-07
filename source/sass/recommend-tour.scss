@@ -107,38 +107,4 @@
     margin-bottom: 2rem;
   }
 }
-//------------preview------
-
-
-.preview {
-  position: relative;
-
-  &::after {
-    content: "";
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 18px;
-    border-right: 1px solid #ffffff;
-    border-top: 1px solid #ffffff;
-    transform: rotate(-135deg);
-    left: 20px;
-  }
-}
-
-.next {
-  position: relative;
-
-  &::before {
-    content: "";
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    border-right: 1px solid #ffffff;
-    border-top: 1px solid #ffffff;
-    transform: rotate(45deg);
-    top: 18px;
-    left: 16px;
-  }
-}
 

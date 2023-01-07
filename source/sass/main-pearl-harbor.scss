@@ -1,0 +1,45 @@
+.main-pearl-harbor__price-value {
+  .price__box {
+    margin-left: 0;
+
+    @media screen and (max-width: 1580px) {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.main-pearl-harbor {
+  display: grid;
+  grid-template-columns: minmax(150px, 300px) 1fr;
+
+  @media screen and (max-width: 780px) {
+    grid-template-columns: minmax(150px, 200px) 1fr;
+  }
+
+  @media screen and (max-width: 580px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+  }
+
+  .main-pearl-harbor__item {
+    margin-top: 3rem;
+
+    @media screen and (max-width: 580px) {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+
+    &:last-child {
+      margin-left: 2rem;
+      width: 80%;
+
+      @media screen and (max-width: 780px) {
+        margin-left: 4rem;
+      }
+
+      @media screen and (max-width: 580px) {
+        grid-column: 1/3;
+      }
+    }
+  }
+}

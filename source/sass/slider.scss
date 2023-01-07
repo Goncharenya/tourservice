@@ -44,6 +44,7 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 2rem;
+
   @media screen and (max-width: 901px) {
     margin-bottom: 2rem;
   }
@@ -54,6 +55,7 @@
   height: 55px;
   border: 1px solid #ffffff;
   cursor: pointer;
+  margin-left: -1px;
 }
 
 .slider__item {

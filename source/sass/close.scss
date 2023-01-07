@@ -1,0 +1,47 @@
+.close {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, .5);
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background: #ffffff;
+    transform: rotate(-45deg);
+    z-index: 100;
+    transition: .4s;
+  }
+
+  .close__line {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 1px;
+    background: #ffffff;
+    transform: rotate(45deg);
+    z-index: 100;
+    transition: .4s;
+  }
+
+  &:hover .close__line {
+    transform: rotate(360deg);
+  }
+  &:hover::after {
+    transform: rotate(90deg);
+  }
+
+}

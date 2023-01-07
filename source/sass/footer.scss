@@ -12,26 +12,6 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.support {
-  display: flex;
-  justify-content: space-between;
-
-  @media screen and (max-width: 1024px) {
-    margin-right: 4rem;
-    width: 38%;
-  }
-
-  @media screen and (max-width: 480px) {
-    width: 100%;
-  }
-
-
-}
-
-.tours__btn {
-  // margin-left: 15%;
-}
-
 .footer__social {
   display: flex;
   justify-content: space-between;

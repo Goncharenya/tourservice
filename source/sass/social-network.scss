@@ -14,4 +14,10 @@
 .social-network__icon-svg {
   fill: #ffffff;
   width: 25px;
+  transition: .3s;
+
+  &:hover {
+    fill: $background_btn;
+    transform: scale(1.2);
+  }
 }

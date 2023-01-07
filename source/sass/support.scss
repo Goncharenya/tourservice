@@ -1,0 +1,13 @@
+.support {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1024px) {
+    margin-right: 4rem;
+    width: 38%;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+}

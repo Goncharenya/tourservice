@@ -1,0 +1,43 @@
+.dots {
+  position: absolute;
+  display: flex;
+  bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (max-width: 800px) {
+    bottom: 10px;
+  }
+
+  @media screen and (max-width: 400px) {
+    bottom: -10px;
+  }
+}
+
+.dots__item {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  margin-right: 2rem;
+  transition: .3s;
+  cursor: pointer;
+
+  @media screen and (max-width: 800px) {
+    margin-right: 1rem;
+    width: 10px;
+    height: 10px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 5px;
+    height: 5px;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+}
+

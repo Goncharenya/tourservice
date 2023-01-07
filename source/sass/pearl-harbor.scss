@@ -1,0 +1,80 @@
+.pearl-harbor-icon__svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 2rem;
+  fill: $background_icon;
+
+  @media screen and (max-width: 570px) {
+    margin-right: 0.5rem;
+  }
+}
+
+.pearl-harbor-icon__arrow_down {
+  border: 1px solid $background_icon;
+  padding: 2px;
+  border-radius: 4px;
+  width: 15px;
+  height: 15px;
+}
+
+.pearl-harbor__btn {
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+}
+
+.pearl-harbor__item {
+  display: flex;
+  width: 100%;
+}
+
+.pearl-harbor {
+  .price__value {
+    font-size: 1.25rem;
+
+    @media screen and (max-width: 580px) {
+      font-size: 1rem;
+    }
+  }
+
+  .price__description {
+    font-size: 0.75rem;
+  }
+}
+
+.pearl-harbor__day {
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+  width: 60%;
+
+  @media screen and (max-width: 580px) {
+    padding-bottom: 0.5rem;
+  }
+}
+
+.pearl-harbor__title {
+  width: 60%;
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 2rem;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    font-size: 1.75rem;
+  }
+
+  @media screen and (max-width: 1280px) {
+    width: 90%;
+    //font-size: 1.75rem;
+  }
+}
+
+.pearl-harbor__plan {
+  margin-top: 2.5rem;
+  font-weight: 400;
+}
+
+.pearl-harbor__sub-title {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}

@@ -43,6 +43,10 @@
       gap: 2rem;
       justify-content: center;
     }
+
+    @media screen and (max-width: 845px) {
+        margin-bottom: 2rem;
+    }
   }
 }
 
