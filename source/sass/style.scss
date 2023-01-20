@@ -1,31 +1,11 @@
-@font-face {
-  font-family: Raleway;
-  src: url('../fonts/raleway/RalewayExtraBold.woff');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Raleway;
-  src: url('../fonts/raleway/RalewayMedium.woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Raleway;
-  src: url('../fonts/raleway/RalewayThin.woff');
-  font-weight: 100;
-  font-style: normal;
-}
-
+@import "var";
+@import "global";
 @import "block";
 //@import "fonts";
 @import "header";
 @import "wrapp";
 @import "normalize";
 @import "body";
-@import "var";
 @import "btn";
 @import "about";
 @import "tours";

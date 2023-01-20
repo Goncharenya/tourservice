@@ -1,5 +1,5 @@
-@import "var";
 .btn {
+  font-family: Raleway, sans-serif;
   background: $background_btn;
   min-width: 140px;
   padding: 10px 15px;
@@ -7,14 +7,24 @@
   cursor: pointer;
   transition: .3s;
   box-sizing: border-box;
-  border: 1px solid transparent;
+  //border: 1px solid transparent;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 400;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 
   &:hover {
     border: 1px solid #fff;
+  }
 
+  &._big {
+    font-size: 1.15rem;
+    padding: 15px 25px;
   }
 }
 
@@ -47,12 +57,17 @@
 }
 
 .btn-arrow-box {
-  position: absolute;
+  //position: absolute;
   width: 8px;
   height: 8px;
   border-right: 1px solid #ffffff;
   border-top: 1px solid #ffffff;
   transform: rotate(45deg);
-  right: 17px;
-  bottom: 15px;
+  //right: 17px;
+  //bottom: 15px;
+  display: inline-block;
+
+  &._down {
+    transform: rotate(135deg);
+  }
 }

@@ -7,11 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hawaii tours</title>
     <!--    <link rel="stylesheet" href="sass/normalize.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body">
 <header class="header">
-    <div class="header__logo">тут LOGO будет</div>
+    <div class="header__logo">
+        <div class="header__logo-item">
+            <a class="header__logo-item-logo" href="/"></a>
+            <div class="header__logo-item-url">aloha-tours.com</div>
+        </div>
+    </div>
     <div class="header__menu menu wrapp">
         <input id="menu__toggle" type="checkbox"/>
         <label class="burger menu__btn" for="menu__toggle">
@@ -28,17 +37,33 @@
     </div>
     <div class="header__block wrapp">
         <div class="header__item header__menu"></div>
-        <div class="header__item">
+        <div class="header__item header__text">
             <h1 class="header__caption">
                 Make <br> your vacation <br>in Hawaii
-                <svg class="header__caption-under" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 90">
-                    <text y="60"
-                          font-family="Raleway, sans-serif">
-                        Like a dream
-                    </text>
-                </svg>
+                <span class="hidden-xs"><em>Unforgettable</em></span>
+                <span class="visible-xs"><em>Unforget-table</em></span>
+
+<!--                <svg class="hidden-xs header__caption-under" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 100%">-->
+<!--                    <text y="53%"-->
+<!--                          font-family="Raleway, sans-serif">-->
+<!--                        Unforgettable-->
+<!--                    </text>-->
+<!--                </svg>-->
+<!--                <svg class="visible-xs header__caption-under" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 100%">-->
+<!--                    <text y="30%"-->
+<!--                          font-family="Raleway, sans-serif">-->
+<!--                        Unforget- -->
+<!--                    </text>-->
+<!--                    <text y="70%"-->
+<!--                          font-family="Raleway, sans-serif">-->
+<!--                        table-->
+<!--                    </text>-->
+<!--                </svg>-->
             </h1>
 
+            <p class="header__anonce">There are six major islands to visit in Hawaiʻi: Kauaʻi, Oʻahu, Molokaʻi, Lānaʻi, Maui, and the island of Hawaiʻi! Each has its own distinct personality, adventures, activities and sights. We invite you to explore the Islands of Aloha to find your own heavenly Hawaiʻi experiences. </p>
+<!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt earum, esse facere fugit harum labore laborum modi nostrum, obcaecati pariatur provident quas recusandae, repudiandae rerum sint? A doloribus inventore sint?</p>-->
+<!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque deserunt odit pariatur saepe tempore voluptas voluptates voluptatum. Aperiam delectus ducimus, id itaque laboriosam magni placeat praesentium quaerat suscipit ullam.</p>-->
 
         </div>
         <div class="header__item header__footer">
@@ -48,27 +73,20 @@
     </div>
 </header>
 <section class="about section" id="about">
-    <div class="about-block wrapp">
-        <div class="about-block__item">
+    <div class="about-block wrapp ">
+        <div class="about-block__item section-title">
             <h2 class="about-block__title title_h2">
                 About us
             </h2>
-            <p class="about-block__subtitle">
+            <p class="_subtitle about-block__subtitle">
                 Few annotation words
             </p>
         </div>
-        <div class="about-block__item">
+        <div class="about-block__item section-text">
             <div class="about-tours">
-                <div class="about-tours__item">
-                    <p class="about-tours__title">
-                        When ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ipsum odio quos saepe sed
-                        suscipit vel veritatis. Dolorem doloremque ea explicabo nisi nulla odit placeat possimus,
-                        recusandae repellat tempora voluptatem?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda, cupiditate
-                        dignissimos excepturi exercitationem fugiat laboriosam numquam officia optio quas quibusdam quo
-                        sed, sunt, temporibus totam. Ad, illo, ut. Corporis.
-                    </p>
-                </div>
+                <p class="section-text-big">
+                    When you coming to the island, you are in the company of your friend who are happy to share with you and to see classic and non-tourist Hawaii.
+                </p>
                 <div class="about-tours__item">
                     <div class="about-tours__icon">
                         <svg class="about-tours__icon-svg" height="48" width="48"
@@ -85,9 +103,9 @@
                 </div>
                 <div class="about-tours__item">
                     <div class="btn-about">
-                        <button class="tours-more">
+                        <button class="btn tours-more _big">
                             more about hawaiian tours
-                            <span class="btn-arrow-box">
+                            <span class="btn-arrow-box _down">
                             </span>
                         </button>
                     </div>
@@ -100,12 +118,12 @@
 <section class="tours section" id="tours">
     <div class="tours-box">
 
-        <div class="tours-box__item">
-            <h2 class="tours-box__title title_h2">
+        <div class="_tile tours-box__item">
+            <h2 class="_tile-title tours-box__title title_h2">
                 Ready guide
             </h2>
 
-            <div class="tours-box__groups">
+            <div class="_tile-text tours-box__groups">
                 <div class="tours-box__group">
                     <div class="tours-box__btn">
                         <button class="tours__btn">
@@ -150,14 +168,14 @@
             </div>
         </div>
 
-        <div class="tours-box__item">
+        <div class="_tile tours-box__item">
 
-            <h2 class="tours-box__title title_h2">
+            <h2 class="_tile-title tours-box__title title_h2">
                 Individual
+                <p class="_tile-title-sub tours-box__sub-title">constructor</p>
             </h2>
-            <p class="tours-box__sub-title">construction</p>
 
-            <div class="tours-box__groups">
+            <div class="_tile-text tours-box__groups">
                 <div class="tours-box__group">
                     <div class="tours-box__btn">
                         <button class="tours__btn">
@@ -173,12 +191,12 @@
                 </div>
             </div>
         </div>
-        <div class="tours-box__item">
-            <h2 class="tours-box__title title_h2">
+        <div class="_tile tours-box__item">
+            <h2 class="_tile-title tours-box__title title_h2">
                 Private tours
             </h2>
 
-            <div class="tours-box__groups">
+            <div class="_tile-text tours-box__groups">
                 <div class="tours-box__group">
                     <div class="tours-box__btn">
                         <button class="tours__btn">
@@ -301,7 +319,7 @@
                 <h2 class="special-services__title title_h2">
                     special services
                 </h2>
-                <p class="special-services__subtitle">
+                <p class="_subtitle special-services__subtitle">
                     individual approach to you request
                 </p>
             </div>
@@ -370,98 +388,102 @@
 <section class="surfing-snorkeling section">
     <div class="surfing-snorkeling__box">
         <div class="surfing-snorkeling__item">
-            <h2 class="tours-box__title title_h2">
-                Surfing
-            </h2>
-            <p class="tours-box__sub-title">from beginner to advanced</p>
-            <div class="tours-box__groups">
-                <div class="tours-box__group">
-                    <div class="tours-box__btn">
-                        <button class="tours__btn">
-                            <span class="tours__btn-decoration"></span>
-                        </button>
+            <article class="_tile">
+                <h2 class="_tile-title tours-box__title title_h2">
+                    Surfing
+                    <p class="_tile-title-sub _subtitle tours-box__sub-title">from beginner to advanced</p>
+                </h2>
+                <div class="_tile-text tours-box__groups">
+                    <div class="tours-box__group">
+                        <div class="tours-box__btn">
+                            <button class="tours__btn">
+                                <span class="tours__btn-decoration"></span>
+                            </button>
+                        </div>
+                        <div class="tours-box__group-description">
+                            <h4 class="tours-box__group-title">
+                                Training
+                            </h4>
+                            <span class="tours-box__description">4 hours</span>
+                        </div>
                     </div>
-                    <div class="tours-box__group-description">
-                        <h4 class="tours-box__group-title">
-                            Training
-                        </h4>
-                        <span class="tours-box__description">4 hours</span>
+                    <div class="tours-box__group">
+                        <div class="tours-box__btn">
+                            <button class="tours__btn">
+                                <span class="tours__btn-decoration"></span>
+                            </button>
+                        </div>
+                        <div class="tours-box__group-description">
+                            <h4 class="tours-box__group-title">
+                                Surfguiding
+                            </h4>
+                            <span class="tours-box__description">4 hours</span>
+                        </div>
+                    </div>
+                    <div class="tours-box__group">
+                        <div class="tours-box__btn">
+                            <button class="tours__btn">
+                                <span class="tours__btn-decoration"></span>
+                            </button>
+                        </div>
+                        <div class="tours-box__group-description">
+                            <h4 class="tours-box__group-title">
+                                Photo and video and parsing mistakes
+                            </h4>
+                            <span class="tours-box__description">1-4 people</span>
+                        </div>
                     </div>
                 </div>
-                <div class="tours-box__group">
-                    <div class="tours-box__btn">
-                        <button class="tours__btn">
-                            <span class="tours__btn-decoration"></span>
-                        </button>
-                    </div>
-                    <div class="tours-box__group-description">
-                        <h4 class="tours-box__group-title">
-                            Surfguiding
-                        </h4>
-                        <span class="tours-box__description">4 hours</span>
-                    </div>
-                </div>
-                <div class="tours-box__group">
-                    <div class="tours-box__btn">
-                        <button class="tours__btn">
-                            <span class="tours__btn-decoration"></span>
-                        </button>
-                    </div>
-                    <div class="tours-box__group-description">
-                        <h4 class="tours-box__group-title">
-                            Photo and video and parsing mistakes
-                        </h4>
-                        <span class="tours-box__description">1-4 people</span>
-                    </div>
-                </div>
-            </div>
+            </article>
         </div>
         <div class="surfing-snorkeling__item">
-            <h2 class="tours-box__title title_h2">
-                Snorkeling
-            </h2>
-            <p class="tours-box__sub-title">from beginner to advanced</p>
-            <div class="tours-box__groups">
-                <div class="tours-box__group">
-                    <div class="tours-box__btn">
-                        <button class="tours__btn">
-                            <span class="tours__btn-decoration"></span>
-                        </button>
+            <article class="_tile">
+                <h2 class="_tile-title tours-box__title title_h2">
+                    Snorkeling
+                    <p class="_tile-title-sub _subtitle tours-box__sub-title">from beginner to advanced</p>
+                </h2>
+                <div class="_tile-text tours-box__groups">
+                    <div class="tours-box__group">
+                        <div class="tours-box__btn">
+                            <button class="tours__btn">
+                                <span class="tours__btn-decoration"></span>
+                            </button>
+                        </div>
+                        <div class="tours-box__group-description">
+                            <h4 class="tours-box__group-title">
+                                Training
+                            </h4>
+                            <span class="tours-box__description">1-4 people</span>
+                        </div>
                     </div>
-                    <div class="tours-box__group-description">
-                        <h4 class="tours-box__group-title">
-                            Training
-                        </h4>
-                        <span class="tours-box__description">1-4 people</span>
+                    <div class="tours-box__group">
+                        <div class="tours-box__btn">
+                            <button class="tours__btn">
+                                <span class="tours__btn-decoration"></span>
+                            </button>
+                        </div>
+                        <div class="tours-box__group-description">
+                            <h4 class="tours-box__group-title">
+                                Small Group
+                            </h4>
+                            <span class="tours-box__description">1-4 people</span>
+                        </div>
+                    </div>
+                    <div class="tours-box__group">
+                        <div class="tours-box__btn">
+                            <button class="tours__btn">
+                                <span class="tours__btn-decoration"></span>
+                            </button>
+                        </div>
+                        <div class="tours-box__group-description">
+                            <h4 class="tours-box__group-title">
+                                Small Group
+                            </h4>
+                            <span class="tours-box__description">1-4 people</span>
+                        </div>
                     </div>
                 </div>
-                <div class="tours-box__group">
-                    <div class="tours-box__btn">
-                        <button class="tours__btn">
-                            <span class="tours__btn-decoration"></span>
-                        </button>
-                    </div>
-                    <div class="tours-box__group-description">
-                        <h4 class="tours-box__group-title">
-                            Small Group
-                        </h4>
-                        <span class="tours-box__description">1-4 people</span>
-                    </div>
-                </div>
-                <div class="tours-box__group">
-                    <div class="tours-box__btn">
-                        <button class="tours__btn">
-                            <span class="tours__btn-decoration"></span>
-                        </button>
-                    </div>
-                    <div class="tours-box__group-description">
-                        <h4 class="tours-box__group-title">
-                            Small Group
-                        </h4>
-                        <span class="tours-box__description">1-4 people</span>
-                    </div>
-                </div>
-            </div>
+            </article>
         </div>
     </div>
 </section>
@@ -469,7 +491,7 @@
 <section class="before-traveling">
     <div class="before-traveling__container wrapp">
         <h2 class="title_h2">before traveling</h2>
-        <div class="subtitle">
+        <div class="_subtitle subtitle">
             What you need before traveling to Hawaii
         </div>
         <div class="before-traveling__box traveling-info">
@@ -640,7 +662,7 @@
 
 <footer class="footer start-travel" id="form">
     <h2 class="title_h2 wrapp">start-travel</h2>
-    <span class="subtitle wrapp">Few annotation words</span>
+    <span class="_subtitle subtitle wrapp">Few annotation words</span>
     <div class="start-travel__box wrapp">
 
         <form action="#" class="form">
