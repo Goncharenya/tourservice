@@ -1,6 +1,7 @@
 .before-traveling {
   color: #000000;
   background: #ffffff;
+  padding: 4rem 0;
 
   .title_h2 {
     width: 30%;
@@ -17,7 +18,7 @@
 }
 
 .before-traveling__box {
-  margin: 3rem 0;
+  //margin: 3rem 0;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: minmax(5%, 10%) 2fr minmax(15%, 35%);
@@ -36,6 +37,9 @@
 .before-traveling__container {
   margin: 3rem auto;
   // margin-bottom: 10rem;
+  .section-title {
+    margin-bottom: 3rem;
+  }
 }
 
 .before-traveling__item {
@@ -78,8 +82,8 @@
 
 .before-traveling__item:nth-child(2) {
   padding: 3rem 3rem 0;
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .before-traveling__item:nth-child(3) {
@@ -101,19 +105,21 @@
 
 .traveling-info__title {
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  width: 80%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  //width: 80%;
+  width: 100%;
 }
 
 .traveling-info__description {
   padding-top: 2rem;
+  margin-top: 0;
 }
 
 .traveling-info__number {
   .number__count {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
   }
 

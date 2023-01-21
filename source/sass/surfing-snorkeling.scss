@@ -10,13 +10,18 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px 150px 1fr;
+  //grid-template-rows: 100px 150px 1fr;
   width: 50%;
+  overflow: hidden;
 
   @media screen and (max-width: 780px) {
     width: 100%;
     grid-template-rows: 60px 50px 1fr;
     height: 100%;
+  }
+
+  ._tile {
+    width: 100%;
   }
 
   .tours-box__title {
