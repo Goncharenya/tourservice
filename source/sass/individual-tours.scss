@@ -12,7 +12,8 @@
 .individual-tours__box {
   display: grid;
   grid-template-columns: repeat(4, minmax(10%, 360px));
-  grid-template-rows: minmax(10%, 360px);
+  //grid-template-rows: minmax(10%, 360px);
+  grid-template-rows: 1fr;
   grid-gap: 2rem;
 
   @media screen and (max-width: 1540px) {
