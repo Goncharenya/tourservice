@@ -1,7 +1,5 @@
 .individual-tours {
-  //background: url("/img/see_bg.jpg") no-repeat center/cover;
   background: linear-gradient(rgba(23,29,45,.78),rgba(23,29,45,.068)),url(/img/mount-1-colored.jpg) top/cover;
-  //min-height: 80vh;
   padding: 6rem 0;
 
   @media screen and (max-width: 480px) {
@@ -12,9 +10,9 @@
 .individual-tours__box {
   display: grid;
   grid-template-columns: repeat(4, minmax(10%, 360px));
-  //grid-template-rows: minmax(10%, 360px);
   grid-template-rows: 1fr;
   grid-gap: 2rem;
+  justify-content: space-between;
 
   @media screen and (max-width: 1540px) {
     grid-template-columns: repeat(2, minmax(10%, 360px));
