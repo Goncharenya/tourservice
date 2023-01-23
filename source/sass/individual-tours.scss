@@ -1,14 +1,19 @@
 .individual-tours {
-  background: url("/img/see_bg.jpg") no-repeat center/cover;
+  //background: url("/img/see_bg.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(23,29,45,.78),rgba(23,29,45,.068)),url(/img/mount-1-colored.jpg) top/cover;
   //min-height: 80vh;
   padding: 6rem 0;
+
+  @media screen and (max-width: 480px) {
+    padding: 5rem 0 1rem;
+  }
 }
 
 .individual-tours__box {
   display: grid;
   grid-template-columns: repeat(4, minmax(10%, 360px));
   grid-template-rows: minmax(10%, 360px);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 
   @media screen and (max-width: 1540px) {
     grid-template-columns: repeat(2, minmax(10%, 360px));
@@ -28,7 +33,8 @@
 }
 
 .individual-tours__title {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+
   @media screen and (max-width: 1540px) {
     text-align: center;
   }

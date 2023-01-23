@@ -2,9 +2,13 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr 1fr;
+  //box-shadow: 4px 4px 8px 0 rgba(0,0,0,.72);
 
   @media screen and (max-width: 880px) {
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    //border: 1px solid rgba(255, 255, 255, 0.13);
+    background: rgba(23, 29, 45, 0.59);
+    padding: 0 0 1rem;
+    //box-shadow: 4px 4px 8px 0 rgba(0,0,0,.72);
   }
 }
 
@@ -48,6 +52,8 @@
   justify-content: space-between;
   flex-direction: column;
   z-index: 20;
+  padding: 1rem;
+  box-sizing: border-box;
 
   &::after {
     content: "";
@@ -64,7 +70,7 @@
     position: static;
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    //padding: 1rem;
     align-items: flex-end;
     width: auto;
     z-index: 20;

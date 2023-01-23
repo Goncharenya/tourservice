@@ -1,11 +1,18 @@
 .pearl-harbor-icon__svg {
-  width: 25px;
-  height: 25px;
-  margin-right: 2rem;
+  width: 15px;
+  height: 15px;
+  margin-right: 1rem;
   fill: $background_icon;
 
   @media screen and (max-width: 570px) {
     margin-right: 0.5rem;
+  }
+}
+
+.header-tour__description {
+  .pearl-harbor-icon__svg {
+    width: 25px;
+    height: 25px;
   }
 }
 

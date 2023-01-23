@@ -21,7 +21,8 @@
   //margin: 3rem 0;
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: minmax(5%, 10%) 2fr minmax(15%, 35%);
+  //grid-template-columns: minmax(5%, 10%) 2fr minmax(15%, 35%);
+  grid-template-columns: 20% 50% 30%;
 
   @media screen and (max-width: 1024px) {
     grid-template-columns: minmax(5%, 10%) 2fr;
@@ -36,7 +37,11 @@
 
 .before-traveling__container {
   margin: 3rem auto;
-  // margin-bottom: 10rem;
+
+  @media screen and (max-width: 480px) {
+    margin: 3rem auto 0;
+  }
+
   .section-title {
     margin-bottom: 3rem;
   }
@@ -76,7 +81,8 @@
   text-align: end;
 
   @media screen and (max-width: 480px) {
-    display: none;
+    //display: none;
+    position: absolute;
   }
 }
 
@@ -121,6 +127,10 @@
   .number__count {
     font-size: 3rem;
     font-weight: 900;
+
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+    }
   }
 
   .number__next {
@@ -140,7 +150,7 @@
 }
 
 .traveling-info__guide {
-  background: url("../img/oahy.jpg") no-repeat center/cover;
+  background: url("/img/oahy.jpg") no-repeat center/cover;
   object-fit: cover;
   width: 360px;
   height: 360px;
@@ -160,10 +170,6 @@
       width: 200px;
       margin: 0 auto;
     }
-  }
-
-  @media screen and (max-width: 480px) {
-    margin-top: 1rem;
   }
 }
 
