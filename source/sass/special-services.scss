@@ -1,6 +1,11 @@
 .special-services {
   background: $background_section;
   padding: 7rem 0;
+  //border-top: 1px solid rgba(255,255,255,.42);
+
+  @media screen and (max-width: 780px) {
+    padding: 5rem 0;
+  }
 }
 
 .special-services__description {
@@ -41,7 +46,6 @@
 
     @media screen and (max-width: 1480px) {
       flex-wrap: wrap;
-      gap: 2rem;
       justify-content: center;
     }
 
@@ -83,12 +87,16 @@
   .service__icon {
     background-size: 60%;
     min-height: 170px;
+
+    @media screen and (max-width: 480px) {
+      transform: scale(.59);
+      min-height: 120px;
+    }
   }
 
   &:nth-child(1) {
     .service__icon {
       background: url("../img/services_icon_01.jpg") no-repeat center;
-
     }
   }
 
@@ -124,6 +132,12 @@
 }
 .special-services__items {
   margin-top: 2rem;
+  gap: 2rem;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 .special-services__item {
@@ -131,6 +145,7 @@
   //min-width: 220px;
   padding: 20px;
   flex: 1;
+  width: 50%;
 }
 
 .service__title {

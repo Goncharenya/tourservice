@@ -9,7 +9,7 @@
 .menu__link {
   text-decoration: none;
   color: $font_color;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   transition: .3s;
   transition-property: all;
@@ -110,10 +110,16 @@
   top: 3rem;
   right: 0;
   z-index: 10;
-  .menu__item {
-    margin-bottom: 1rem;
+  background: rgba(23, 29, 45, 0.75);
+  padding: 1rem 0 1rem 1rem;
+
+  @media screen and (max-width: 1023px) {
   }
 
+  .menu__item {
+    margin-bottom: 1rem;
+    padding: .25rem;
+  }
 }
 
 

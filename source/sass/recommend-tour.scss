@@ -1,7 +1,12 @@
 .recommend-tour {
-  background: url("/img/see_bg.jpg") no-repeat;
+  //background: url("/img/see_bg.jpg") no-repeat;
+  background: linear-gradient(rgba(23,29,45,.78),rgba(23,29,45,.068)),url(/img/mount-1-colored.jpg) center/cover;
   background-size: cover;
   padding: 7rem 0;
+
+  @media screen and (max-width: 780px) {
+    padding: 5rem 0;
+  }
 
   .wrapp {
     width: 95%;
@@ -79,6 +84,10 @@
   height: auto;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 480px) {
+    margin: 0;
+  }
 }
 
 .recommend-tour__item:nth-child(1) {

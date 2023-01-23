@@ -204,12 +204,22 @@ body {
         background-repeat: no-repeat;
         //width: 100%;
 
+        @media screen and (max-width: 780px) {
+            padding: 12vw 8vw;
+        }
+
         &-title {
+            text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+
             &-sub {
                 font-size: 2.3rem;
                 line-height: 1.12;
                 font-weight: 400;
                 text-transform: none;
+
+                @media screen and (max-width: 780px) {
+                    font-size: 1.3rem;
+                }
             }
         }
 
@@ -225,6 +235,40 @@ body {
     .footer__copyright-item {
         opacity: .45;
     }
+
+    ._cover {
+        padding: 1.5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        min-height: 370px;
+        box-shadow: 4px 4px 8px 0 rgba(0,20,40,.6);
+        border-radius: 3px;
+        overflow: hidden;
+        border-top: 1px solid rgba(255,255,255,.12);
+        transition: all 2s ease;
+
+        &:hover {
+            &:before,
+            &:after {
+                background-color: rgba(0,0,0,0);
+            }
+        }
+
+        &-title {
+            width: calc(100% + 3rem);
+            box-sizing: border-box;
+            margin: -1.5rem;
+            padding: 1.8rem 25% 1rem 1.5rem;
+            background: linear-gradient(rgba(23,29,45,.1),rgba(23,29,45,0));
+            font-size: 1.8em;
+            font-weight: 600;
+            font-family: 'Noto Sans',sans-serif;
+            text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+            line-height: 1.27;
+            z-index: 100;
+        }
+    }
 }
 
 
@@ -235,4 +279,68 @@ body {
 @keyframes bg-move {
     0%   { background-position: -500px 0; }
     100% { background-position: 1000px 0; }
+}
+
+.body.v2 {
+    .header {
+        &::after {
+            background: linear-gradient(rgba(23,29,45,.3) 10%,rgba(23,29,45,.01) 70%,rgba(23,29,45,.31)),url(/img/header_1.jpg) no-repeat center/cover;
+        }
+    }
+
+    .tours-box__item {
+        &:first-child {
+            //https://www.shutterstock.com/shutterstock/photos/2188233687/display_1500/stock-photo-top-view-of-woman-in-bikini-under-umbrella-lying-and-sunbathes-on-tropical-seychelles-sea-sand-2188233687.jpg
+            background: linear-gradient(rgba(0,0,0,.1),rgba(100,60,0,.5)), url("/img/beach-1.jpg") center  / cover;
+        }
+
+        &:nth-child(2) {
+            //https://www.shutterstock.com/shutterstock/photos/1418493116/display_1500/stock-photo--attractive-female-surfer-with-surfboard-1418493116.jpg
+            background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.45)), url("/img/instructor-1.jpg") center / cover;
+        }
+
+        &:nth-child(3) {
+            //https://www.shutterstock.com/shutterstock/photos/2234441763/display_1500/stock-photo-tropical-leaf-background-glow-in-the-dark-color-toned-2234441763.jpg
+            background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.45)), url("/img/neon-1.jpg") center / cover;
+        }
+    }
+
+
+    .surfing-snorkeling__item {
+        &:first-child {
+            &::after {
+                //https://www.shutterstock.com/shutterstock/photos/345007313/display_1500/stock-photo-surfer-on-blue-ocean-wave-getting-barreled-at-sunrise-345007313.jpg
+                background: linear-gradient(rgba(23,29,45,.28),rgba(23,29,45,.48)),url(/img/surf-2.jpg) center/cover;
+            }
+        }
+        &:nth-child(2) {
+            &::after {
+                //https://www.shutterstock.com/shutterstock/photos/1057747487/display_1500/stock-photo-snorkeling-mask-and-tube-1057747487.jpg
+                background: linear-gradient(rgba(23,29,45,.28),rgba(23,29,45,.48)),url(/img/snork-2.jpg) center/cover;
+            }
+        }
+    }
+
+    .recommend-tour__item:nth-child(1) .slider__item {
+        background: url(https://www.shutterstock.com/shutterstock/photos/144752791/display_1500/stock-photo-oahu-sign-on-the-beach-144752791.jpg) no-repeat top/180%;
+    }
+    .recommend-tour__item:nth-child(2) .slider__item {
+        //background: url(https://www.shutterstock.com/shutterstock/photos/1737569237/display_1500/stock-photo-pearl-harbor-war-memorial-in-hawaii-1737569237.jpg) no-repeat top/180%;
+        //background: url(https://www.shutterstock.com/shutterstock/photos/1943372131/display_1500/stock-photo-pearl-harbor-oahu-nov-visitors-entering-the-uss-arizona-memorial-1943372131.jpg) no-repeat top/180%;
+        background: url(https://www.shutterstock.com/shutterstock/photos/48780514/display_1500/stock-photo-us-flags-at-pearl-harbor-memorial-48780514.jpg) no-repeat top/180%;
+    }
+    .recommend-tour__item:nth-child(3) .slider__item {
+        background: url(https://www.shutterstock.com/shutterstock/photos/745558222/display_1500/stock-photo-portrait-of-beautiful-nude-long-straight-black-hair-woman-with-pearl-necklace-accessories-naked-745558222.jpg) no-repeat top/180%;
+    }
+
+    .product:nth-child(2) .product__item {
+        background: url(https://www.shutterstock.com/shutterstock/photos/1691400598/display_1500/stock-photo-pinapple-on-pastel-yellow-background-tropical-fruits-concept-1691400598.jpg) no-repeat center/110%;
+    }
+    .product:nth-child(4) .product__item {
+        background: url(https://www.shutterstock.com/shutterstock/photos/501567970/display_1500/stock-photo-a-yellow-glow-appears-through-an-opening-in-antelope-slot-canyon-near-page-arizona-501567970.jpg) no-repeat center/170%;
+    }
+
+    .traveling-info__guide {
+        background: url(https://www.shutterstock.com/shutterstock/photos/1100297582/display_1500/stock-photo-road-trip-travel-girls-driving-car-in-freedom-happy-young-girls-cheering-in-convertible-car-on-1100297582.jpg) no-repeat center/180%;
+    }
 }

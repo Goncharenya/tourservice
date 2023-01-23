@@ -7,18 +7,20 @@
     width: 100%;
     height: 100%;
     //background: url("/img/see_bg.jpg");
-
-    background:
-            linear-gradient(
-                            rgba(23, 29, 45, 0.98),
-                            rgba(23, 29, 45, 0.78)
-            ),
-            url("/img/bg-sea.jpg") center / cover;
+    //background: linear-gradient(rgba(23, 29, 45, 0.98),rgba(23, 29, 45, 0.78)),url("/img/bg-sea.jpg") center / cover;
+    //filter: brightness(90%);
+    //background: linear-gradient(rgba(23,29,45,.78),rgba(23,29,45,.68)),url(/img/bg-sea-2.jpg) center/cover;
+    //background: linear-gradient(rgba(23,29,45,.78),rgba(23,29,45,.68)),url(/img/mount-1.jpg) center/cover;
+    background: linear-gradient(rgba(23,29,45,.78),rgba(23,29,45,.068)),url(/img/mount-1-colored.jpg) bottom/cover;
+    //border-top: 1px solid rgba(255,255,255,.42);
     position: absolute;
-    filter: brightness(130%);
     z-index: -1;
     left: 0;
     top: 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 2rem 0 1rem;
   }
 
   .subtitle {
