@@ -1,6 +1,6 @@
 {
-  "name": "tourservice",
-  "version": "1.0.0",
+  "name": "aloha-tour.com markup",
+  "version": "1.2.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
